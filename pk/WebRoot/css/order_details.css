@@ -1,0 +1,312 @@
+/* 由开发人员工具生成。它可能不是原始源文件的准确表示形式。*/
+
+.clear{
+    clear:both;
+}
+.order_detail {
+	margin-left: 50px; margin-top: 20px; FONT: bold 13px "宋体", Arial;
+}
+.line_1{margin: 0px;}
+
+.line_2 {
+	PADDING:0px; MARGIN-LEFT: 1px; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.title{
+TEXT-ALIGN: center; BACKGROUND: #faf8f2; HEIGHT: 22px; COLOR: #8a7152
+}
+.line_tbl td{
+BORDER-BOTTOM: #f0f0f0 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 15px; PADDING-LEFT: 7px; PADDING-RIGHT: 7px;  VERTICAL-ALIGN: middle; BORDER-RIGHT: #eadbc9 1px solid; PADDING-TOP: 3px
+}
+}
+.order_news {
+	 FONT: bold 14px "宋体", Arial; OVERFLOW: hidden; PADDING-TOP: 15px
+}
+
+
+.order_flow_left {
+	
+	TEXT-ALIGN: center; LINE-HEIGHT: 16px; WIDTH: 98px; FONT-FAMILY: Arial; FLOAT: left
+}
+.order_flow_arrive {
+	TEXT-ALIGN: center; LINE-HEIGHT: 16px; WIDTH: 98px; FONT-FAMILY: Arial; FLOAT: left
+}
+.order_flow_wait {
+	TEXT-ALIGN: center; LINE-HEIGHT: 16px; WIDTH: 98px; FONT-FAMILY: Arial; FLOAT: left
+}
+.order_flow_right_arrive {
+	TEXT-ALIGN: center; LINE-HEIGHT: 16px; WIDTH: 98px; FONT-FAMILY: Arial; FLOAT: left
+}
+.order_flow_right_wait {
+	TEXT-ALIGN: center; LINE-HEIGHT: 16px; WIDTH: 98px; FONT-FAMILY: Arial; FLOAT: left
+}
+.order_flow div span {
+	MARGIN-TOP: 6px; DISPLAY: block; BACKGROUND: #fff
+}
+.order_flow .name {
+	PADDING-BOTTOM: 3px;margin:0px;
+}
+.order_flow_arrive {
+	BACKGROUND-POSITION: 0px -100px
+}
+.order_flow_wait {
+	BACKGROUND-POSITION: 0px -80px; COLOR: #878787
+}
+.order_flow_right_arrive {
+	BACKGROUND-POSITION: 0px -140px
+}
+.order_flow_right_wait {
+	BACKGROUND-POSITION: 0px -120px; COLOR: #878787
+}
+.order_news table.order_news_list {
+	BORDER-BOTTOM: #eadbc9 1px solid; BORDER-LEFT: #eadbc9 1px solid; MARGIN-TOP: 6px; FONT-SIZE: 12px; BORDER-TOP: #eadbc9 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: 0px
+}
+.order_news table.order_news_list tr.title {
+	TEXT-ALIGN: center; BACKGROUND: #faf8f2; HEIGHT: 28px; COLOR: #8a7152
+}
+.business_package table.order_news_list tr.title {
+	TEXT-ALIGN: center; BACKGROUND: #faf8f2; HEIGHT: 28px; COLOR: #8a7152
+}
+.order_news table.order_news_list tr td {
+	BORDER-BOTTOM: #f0f0f0 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 18px; PADDING-LEFT: 7px; PADDING-RIGHT: 7px; HEIGHT: 25px; VERTICAL-ALIGN: middle; BORDER-RIGHT: #eadbc9 1px solid; PADDING-TOP: 3px
+}
+.business_package table.order_news_list tr td {
+	BORDER-BOTTOM: #f0f0f0 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 18px; PADDING-LEFT: 7px; PADDING-RIGHT: 7px; HEIGHT: 25px; VERTICAL-ALIGN: middle; BORDER-RIGHT: #eadbc9 1px solid; PADDING-TOP: 3px
+}
+.order_news table.order_news_list tr.title td {
+	BORDER-BOTTOM: #eadbc9 1px solid; BORDER-TOP: 0px
+}
+.order_news table.order_news_list tr td.row1 {
+	TEXT-ALIGN: center; WIDTH: 130px
+}
+.business_package table.order_news_list tr td.row1 {
+	TEXT-ALIGN: center; WIDTH: 125px
+}
+.order_detail_frame {
+	BORDER-BOTTOM: #dfc9b2 2px solid; BORDER-LEFT: #dfc9b2 2px solid; PADDING-BOTTOM: 0px; MARGIN-TOP: 0px; PADDING-LEFT: 20px;margin-bottom:20px; margin-left: 50px;WIDTH: 916px; PADDING-RIGHT: 20px; BACKGROUND: #fff; BORDER-TOP: #dfc9b2 2px solid; BORDER-RIGHT: #dfc9b2 2px solid; PADDING-TOP: 0px
+}
+.order_detail_frame h2 {
+	MARGIN: 15px 0px 7px 30px; FONT-SIZE: 14px;float:left;
+}
+.order_detail_frame ul.ditail_frame_p {
+	text-align:left;margin-letf:26px;margin-top:0px;margin-bottom:0px;
+	BORDER-BOTTOM: #f2e2d4 1px solid; PADDING-BOTTOM: 11px; LINE-HEIGHT: 23px; WIDTH: 866px; PADDING-TOP: 0px; 
+}
+.order_detail_frame h2 a {
+	PADDING-LEFT: 10px; DISPLAY: inline-block; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.order_detail_frame h2 a:hover {
+	PADDING-LEFT: 10px; DISPLAY: inline-block; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.order_detail_frame button.bank {
+	BORDER-BOTTOM: medium none; TEXT-ALIGN: left; BORDER-LEFT: medium none; PADDING-BOTTOM: 0px; LINE-HEIGHT: 15px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: inline-block; BACKGROUND: none transparent scroll repeat 0% 0%; HEIGHT: 15px; COLOR: #1a66b3; MARGIN-LEFT: 10px; FONT-SIZE: 12px; BORDER-TOP: medium none; CURSOR: pointer; BORDER-RIGHT: medium none; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.order_detail_frame button.bank:hover {
+	TEXT-DECORATION: underline
+}
+.order_detail_frame h2.business_name {
+	PADDING-BOTTOM: 7px; MARGIN: 0px; PADDING-LEFT: 26px; PADDING-RIGHT: 0px; FONT-SIZE: 12px; FONT-WEIGHT: normal; PADDING-TOP: 5px
+}
+.order_detail_frame .merch_bord {
+	WIDTH: 879px; MARGIN-LEFT: 26px
+}
+.merch_bord .tabl_merch {
+	WIDTH: 879px; BORDER-COLLAPSE: separate; FONT-FAMILY: Arial
+}
+.tabl_merch td {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 5px; LINE-HEIGHT: 20px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: #fff; HEIGHT: 20px; VERTICAL-ALIGN: middle; BORDER-TOP: #f0f0f0 1px solid; PADDING-TOP: 5px
+}
+.merch_bord .merch_title td {
+	BORDER-BOTTOM: #eadbc9 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 26px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: #faf8f2; HEIGHT: 26px; COLOR: #8a7152; BORDER-TOP: #eadbc9 1px solid; PADDING-TOP: 0px
+}
+.merch_bord .merch_title {
+	POSITION: relative; MARGIN-BOTTOM: -1px
+}
+.merch_bord .merch_present td {
+	BORDER-TOP: medium none; PADDING-TOP: 0px
+}
+.tabl_merch .tab_w {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 4px; WIDTH: 56px; PADDING-RIGHT: 7px; PADDING-TOP: 10px
+}
+.merch_bord .merch_title .tab_w {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 4px; PADDING-RIGHT: 7px; PADDING-TOP: 2px
+}
+.tabl_merch .tab_w a {
+	BORDER-BOTTOM: #e0e0e0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #e0e0e0 1px solid; WIDTH: 54px; DISPLAY: inline-block; HEIGHT: 54px; OVERFLOW: hidden; BORDER-TOP: #e0e0e0 1px solid; BORDER-RIGHT: #e0e0e0 1px solid
+}
+.tabl_merch .tab_w1 {
+	TEXT-ALIGN: left; WIDTH: 220px; FONT-FAMILY: "宋体"
+}
+.tabl_merch .tab_w1 span {
+	COLOR: #c30
+}
+.tabl_merch .tab_w1 span.present {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #404040; PADDING-TOP: 0px
+}
+.tabl_merch .tab_w7 {
+	WIDTH: 67px
+}
+.merch_title .tab_w3 {
+	WIDTH: 123px; PADDING-RIGHT: 0px
+}
+.merch_bord .merch_title .tab_w2 {
+	PADDING-LEFT: 47px; WIDTH: 68px
+}
+.merch_title .tab_w2 span {
+	FLOAT: left
+}
+.merch_title .tab_w2 I {
+	MARGIN-TOP: 5px; WIDTH: 14px; BACKGROUND: url(../images/sprites_orderdetails.gif) no-repeat 0px -180px; FLOAT: left; HEIGHT: 14px
+}
+.merch_bord .merch_title .tab_w6 {
+	WIDTH: 51px; PADDING-RIGHT: 0px
+}
+.tabl_merch .tab_w5 {
+	PADDING-LEFT: 12px
+}
+.merch_bord .merch_title .tab_w5 {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 12px; PADDING-RIGHT: 0px; PADDING-TOP: 2px
+}
+.merch_title td.tab_w1 {
+	TEXT-ALIGN: center
+}
+.merch_title .tab_w3 {
+	TEXT-ALIGN: center
+}
+.order_detail_frame .ditail_frame_notop {
+	WIDTH: 879px; FONT-FAMILY: Arial, "宋体"; BACKGROUND: url(../images/bg_orderdetails.gif) repeat-x 0px 0px; MARGIN-LEFT: 26px
+}
+.ditail_frame_notop .tabl_other {
+	TEXT-ALIGN: right; LINE-HEIGHT: 22px; MARGIN-TOP: 5px; WIDTH: 879px; BORDER-COLLAPSE: collapse; BACKGROUND: #fff
+}
+.ditail_frame_notop .price_total {
+	TEXT-ALIGN: right; LINE-HEIGHT: 30px; BACKGROUND-COLOR: white; HEIGHT: 30px; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.ditail_frame_notop .price_total span {
+	COLOR: #c30
+}
+.order_detail_frame ul.ditail_frame_hint {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 25px; PADDING-RIGHT: 25px; COLOR: #878787; PADDING-TOP: 10px
+}
+.order_detail_frame ul.ditail_frame_hint span.icon {
+	MARGIN-TOP: 2px; WIDTH: 20px; BACKGROUND: url(../images/sprites_orderdetails.gif) no-repeat -20px -180px; FLOAT: left; HEIGHT: 14px
+}
+.order_detail_frame ul.ditail_frame_hint span.survey {
+	COLOR: #853200
+}
+.order_detail_frame ul.ditail_frame_receive li {
+	PADDING-BOTTOM: 3px
+}
+.order_detail_frame ul.ditail_frame_invoice li {
+	PADDING-BOTTOM: 3px
+}
+.order_detail_frame ul.ditail_frame_receive li input {
+	BORDER-BOTTOM: #dadada 1px solid; BORDER-LEFT: #dadada 1px solid; LINE-HEIGHT: 17px; PADDING-LEFT: 3px; BACKGROUND: #fff; HEIGHT: 17px; FONT-SIZE: 12px; BORDER-TOP: #dadada 1px solid; BORDER-RIGHT: #dadada 1px solid
+}
+.order_detail_frame ul.ditail_frame_invoice li input.invoice {
+	BORDER-BOTTOM: #dadada 1px solid; BORDER-LEFT: #dadada 1px solid; LINE-HEIGHT: 17px; PADDING-LEFT: 3px; BACKGROUND: #fff; HEIGHT: 17px; FONT-SIZE: 12px; BORDER-TOP: #dadada 1px solid; BORDER-RIGHT: #dadada 1px solid
+}
+.order_detail_frame ul.ditail_frame_receive li input {
+	WIDTH: 158px
+}
+.order_detail_frame ul.ditail_frame_p li span.wrong {
+	PADDING-LEFT: 5px; COLOR: #c30
+}
+.order_detail_frame ul.ditail_frame_receive li.btn {
+	PADDING-TOP: 7px
+}
+.order_detail_frame ul.ditail_frame_p li.btn button {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; LINE-HEIGHT: 26px; WIDTH: 74px; BACKGROUND: url(../images/sprites_orderdetails.gif) no-repeat 0px -240px; HEIGHT: 26px; COLOR: #fff; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; OVERFLOW: hidden; BORDER-TOP: medium none; CURSOR: pointer; FONT-WEIGHT: bold; BORDER-RIGHT: medium none
+}
+.order_detail_frame ul.ditail_frame_receive li .perhaps {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; COLOR: #878787; PADDING-TOP: 0px
+}
+.order_detail_frame ul.ditail_frame_invoice li label {
+	PADDING-LEFT: 3px; PADDING-RIGHT: 5px
+}
+.order_detail_frame ul.ditail_frame_invoice li input.invoice {
+	WIDTH: 230px
+}
+.order_detail_frame ul.ditail_frame_p .notes {
+	COLOR: #878787
+}
+.order_detail_frame ul.ditail_frame_invoice li select {
+	LINE-HEIGHT: 18px; HEIGHT: 18px; FONT-SIZE: 12px
+}
+.merch_youhui {
+	PADDING-BOTTOM: 9px; MARGIN: 0px 0px 12px 26px; PADDING-LEFT: 12px; WIDTH: 855px; PADDING-RIGHT: 12px; BACKGROUND: #fffdb3; PADDING-TOP: 11px
+}
+.merch_youhui p {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 4px
+}
+.order_detail_frame .merch_lack {
+	MARGIN: 6px 0px 0px 26px; WIDTH: 879px
+}
+.merch_lack H4 {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 23px; PADDING-LEFT: 8px; PADDING-RIGHT: 0px; MARGIN-BOTTOM: 6px; BACKGROUND: #fffdb3; HEIGHT: 23px; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-TOP: 2px
+}
+.merch_lack H4 span {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; FONT: bold 12px Arial; COLOR: #c30; PADDING-TOP: 0px
+}
+.merch_lack H4 a {
+	FONT-WEIGHT: normal
+}
+.merch_lack .tabl_merch {
+	BORDER-BOTTOM: #eadbc9 1px solid
+}
+.order_detail_frame ul.ditail_frame_p .hot {
+	FONT-FAMILY: Arial; COLOR: #c30; FONT-WEIGHT: bold
+}
+.merch_returns .ditail_frame_notop {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 12px; PADDING-TOP: 0px
+}
+.merch_returns .merch_returns_title {
+	PADDING-BOTTOM: 9px; FONT-FAMILY: "宋体"
+}
+.merch_returns .tab_w1 {
+	WIDTH: 311px
+}
+.merch_returns .tab_w6 {
+	PADDING-LEFT: 32px !important
+}
+.merch_returns .tab_w5 {
+	PADDING-LEFT: 28px !important; WIDTH: 281px
+}
+.order_detail_frame .business_package_start {
+	BORDER-BOTTOM: medium none; POSITION: relative; BORDER-LEFT: medium none; LINE-HEIGHT: 0; MARGIN-BOTTOM: -1px; BACKGROUND: #fff; HEIGHT: 1px; OVERFLOW: hidden; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+.order_detail_frame .business_package {
+	WIDTH: 889px; MARGIN-LEFT: 26px; OVERFLOW: hidden; BORDER-TOP: #f2e2d4 1px dashed
+}
+.order_detail_frame .business_package .merch_bord {
+	MARGIN-LEFT: 0px
+}
+.order_detail_frame .business_package .ditail_frame_notop {
+	MARGIN-LEFT: 0px
+}
+.tabl_merch .tab_w3 {
+	TEXT-ALIGN: center; WIDTH: 123px
+}
+.tabl_merch .tab_w2 {
+	TEXT-ALIGN: center; WIDTH: 115px
+}
+.tabl_merch .tab_w6 {
+	TEXT-ALIGN: center; WIDTH: 41px; PADDING-RIGHT: 10px
+}
+.tabl_merch .tab_w4 {
+	TEXT-ALIGN: center; WIDTH: 86px
+}
+.merch_bord .merch_title .tab_w4 {
+	WIDTH: 86px
+}
+button {
+	CURSOR: pointer
+}
+.tabl_merch .tab_w5 .tab_w5_online {
+	PADDING-BOTTOM: 6px; DISPLAY: block
+}
+h2 {
+	FONT-SIZE: 100%; FONT-WEIGHT: normal
+}
+h3 {
+	FONT-SIZE: 100%; FONT-WEIGHT: normal
+}

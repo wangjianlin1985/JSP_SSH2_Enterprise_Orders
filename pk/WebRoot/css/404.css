@@ -1,0 +1,26 @@
+/* CSS Document */
+html, body{ margin:0; background-color:#ffffff;}
+html, body, div, td, ul, li{ font-family:"宋体"; font-size:13px; }
+img{ border:0; vertical-align:middle;}
+h1, h2, h3, dl, dt, dd, p, ul, li, form{ margin:0; padding:0;}
+a, a:link{text-decoration:none; }
+a:hover{text-decoration:underline;}
+
+/*头部*/
+.top{ width:790px; height:90px; margin:0 auto 0 auto; background-image:url(turn_top.jpg); background-repeat:no-repeat; line-height:90px; vertical-align:middle; text-align:right; padding-right:10px; color:#006699;}
+.top a{color:#006699;}
+
+.container{ width:800px; height:460px; background-color:#f9fafa; margin:0 auto;}
+.containertop{ width:100%; height:80px; background-image:url("../images/404/404_bg1.jpg ");background-repeat:no-repeat;}
+.containermain{ width:100%; height:380px;}
+.containerleft{ width:270px; height:380px; background-image:url("../images/404/404_bg2.jpg"); background-repeat:no-repeat; float:left;}
+.leftmain{ margin:122px 23px; }
+.leftmain h1{ font-weight:normal; font-size:13px;}
+.leftmain h2{ font-size:13px; color:#006699; line-height:24px; margin-top:30px;}
+.button{ width:180px; height:60px;}
+.containerright{ width:425px; height:135px; background-image:url("../images/404/404_bg3.jpg"); background-repeat:no-repeat; float:left; padding:200px 75px 50px 30px;}
+.containerright h1{font-size:13px; color:#006699;}
+.containerright p{ line-height:200%;}
+.containerright p a{ color:#0000FF;}
+
+.foot{ width:800px; height:45px; margin:0 auto; padding-top:15px; text-align:center; background-color:#F2F4F5; color:#999999; line-height:160%; font-size:12px;}

@@ -1,0 +1,90 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+.td_title{
+ height: 23px;
+ background-image: url("../images/bg.gif");
+ 	background-color: #FFFFFF;
+ 		text-align: center;
+ 		font-size: 13px;
+}
+.td_field{
+
+	background-color: #FFFFFF;
+	text-align: center;
+	height: 21px;
+	font-size: 13px;
+}
+.td_btn{
+ text-align: center;
+ font-size: 13px;
+}
+
+.td_label{
+	font-size: 13px;
+	font-family:sans-serif;
+	 background-color:#FFFFFF;
+	 width: 15%; 
+	 height: 30px;
+	 text-align: right;
+	 font-weight: bold;
+}
+
+.td_input{
+	 text-align: left;
+	 background-color: #FFFFFF;
+	 	font-size: 13px;
+}
+.td_display{
+	 padding-left:5px;
+     text-align: left;
+	 background-color: #FFFFFF;
+	 	font-size: 13px;
+}
+.mousedown{
+
+border: 1px dashed #DC143C;
+}
+.input_line{
+  border-bottom: 1px solid;
+  border-top: 0px;
+  border-left:0px;
+  border-right: 0px;
+}
+
+#pagerr a{
+  font-size:12px;
+  color:#03515d;
+  text-decoration: none;
+}
+
+#pagerr a:hover
+{
+	color:#f00;	
+}
+#pagerr
+{	color: #03515d;
+	font-size: 12px;
+	
+	}
+#signupform label.error {
+  background:url("../images/unchecked.gif") no-repeat 0px 0px;
+  padding-left: 16px;
+  padding-bottom: 2px;
+  font-weight: bold;
+  color: #EA5200;
+}
+
+#signupform label.checked {
+  background:url("../images/checked.gif") no-repeat 0px 0px;
+}
+.STYLE3 {font-size: 12px; font-weight: bold; }
+.STYLE1 {font-size: 12px}
+.STYLE4 {
+	color: #03515d;
+	font-size: 12px;
+}

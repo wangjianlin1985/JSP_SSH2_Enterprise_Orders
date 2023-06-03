@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:tx="http://www.springframework.org/schema/tx"
+ xmlns:aop="http://www.springframework.org/schema/aop"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+
+
+	<bean id="dataSource"
+		class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+	
+		<property name="driverClass">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="jdbcUrl">
+			<value>jdbc:mysql://localhost:3306/pk</value>
+		</property>
+		<property name="user">
+			<value>root</value>
+		</property>
+		<property name="password">
+			<value>123456</value>
+		</property>
+		 <property name="minPoolSize"><value>1</value></property>
+         <property name="maxPoolSize"><value>40</value></property>
+         <property name="maxIdleTime"><value>1800</value></property>
+         <property name="acquireIncrement"><value>2</value></property>
+         <property name="maxStatements"><value>0</value></property>
+         <property name="initialPoolSize"><value>2</value></property>
+         <property name="idleConnectionTestPeriod"><value>1800</value></property>
+         <property name="acquireRetryAttempts"><value>30</value></property>
+         <property name="breakAfterAcquireFailure"><value>true</value></property>
+         <property name="testConnectionOnCheckout"><value>false</value></property>
+		
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+				org.hibernate.dialect.MySQLDialect
+				</prop>
+					<prop key="hibernate.show_sql">	true
+				</prop> 
+				<prop key="hibernate.hbm2ddl.auto">update</prop> 
+				<prop key="hibernate.show_sql">
+					false
+				</prop>
+				<prop key="hibernate.format_sql"> true </prop>
+				<prop key="connection.autocommit">
+					true
+				</prop>
+			
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+			    <value>com/zmb/pk/model/Employee.hbm.xml</value>
+			     <value>com/zmb/pk/model/Car.hbm.xml</value>
+			    <value>com/zmb/pk/model/Fee.hbm.xml</value>
+			     <value>com/zmb/pk/model/Order.hbm.xml</value>
+			  
+			        
+			</list>
+		</property>
+	</bean>
+	<!-- 
+	<bean name="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="transactionProxyFactoryBean"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean"
+		abstract="true">
+		<property name="transactionManager" ref="transactionManager"></property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+-->
+<bean name="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+<aop:config proxy-target-class="true"> 
+    <aop:advisor pointcut="execution(* com.zmb.pk.service..*(..))" advice-ref="txAdvice"/> 
+   
+</aop:config>
+<tx:advice id="txAdvice" transaction-manager="transactionManager"> 
+    <tx:attributes> 
+        <tx:method name="get*" read-only="true"/> 
+        <tx:method name="find*" read-only="true"/> 
+        <tx:method name="*"/> 
+   </tx:attributes> 
+</tx:advice> 
+
+
+		<!--action  WEB层  -->
+
+	 <bean id="loginAction" class="com.zmb.pk.action.LoginAction" scope="prototype" >
+	 <property name="loginService" ref="loginService"></property>
+		</bean>
+		
+	    <bean id="employeeAction" class="com.zmb.pk.action.EmployeeAction" scope="prototype" >
+	        <property name="employeeService" ref="employeeService"></property>
+		</bean>
+		 <bean id="carAction" class="com.zmb.pk.action.CarAction" scope="prototype" > 
+	        <property name="carService" ref="carService"></property>
+		</bean>
+		 <bean id="feeAction" class="com.zmb.pk.action.FeeAction" scope="prototype">
+	        <property name="feeService" ref="feeService"></property>
+		</bean>
+		
+		 <bean id="orderAction" class="com.zmb.pk.action.OrderAction" scope="prototype">
+	        <property name="orderService" ref="orderService"></property>
+		</bean>
+		
+	
+		<!--Service 业务逻辑层-->
+		 <bean id="loginService" class="com.zmb.pk.service.LoginServiceImp" >
+		 <property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		
+		 <bean id="employeeService" class="com.zmb.pk.service.EmployeeServiceImp"  >
+		 <property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		
+	  <bean id="carService" class="com.zmb.pk.service.CarServiceImp" >
+		 <property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+
+	 <bean id="feeService" class="com.zmb.pk.service.FeeServiceImp" >
+		 <property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+
+		 <bean id="orderService" class="com.zmb.pk.service.OrderServiceImp"  >
+		 <property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+ <!--  
+	 <bean id="orderService" parent="transactionProxyFactoryBean"> 
+        <property name="target"> 
+            <bean class="com.zmb.pk.service.OrderServiceImp" />
+        </property> 
+      </bean>
+-->
+</beans>

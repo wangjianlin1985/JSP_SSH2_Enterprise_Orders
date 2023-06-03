@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+  <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	   <constant name="struts.ui.theme" value="simple" />
+	 
+	<package name="zmb"  extends="struts-default,json-default">
+	  <global-results>
+  		  <result name="error">/error.jsp</result>
+  	    </global-results>
+  
+	    <global-exception-mappings>
+	        <exception-mapping exception="java.lang.Exception" result="error" />
+	   	</global-exception-mappings>
+ 
+ 	<action name="user_*" class="loginAction" method="{1}">
+ 		<result name="login">/login.jsp</result>
+     	<result name="index">/main.jsp</result>
+ 	 </action>
+ 
+   <action name="emp_*" class="employeeAction" method="{1}">
+     	<result name="add">/jsp/employee/employee_add.jsp</result>
+     	<result name="list">/jsp/employee/employee_list.jsp</result>
+     	<result name="detail">/jsp/employee/employee_detail.jsp</result>
+     	<result name="update">/jsp/employee/employee_update.jsp</result>
+     	<result name="del" type="redirect">emp_list.action</result>
+     	<result name="toList" type="redirect">emp_list.action</result>
+     	<result name="userDetail">/jsp/user/user_detail.jsp</result>
+     	 <result name="modifyPasswd">/jsp/user/modify_passwd.jsp</result> 
+     	
+ 	 </action>
+ 	 
+ 	  <action name="car_*" class="carAction" method="{1}">
+ 	  <result name="add">/jsp/car/car_add.jsp</result>
+     	<result name="list">/jsp/car/car_list.jsp</result>
+     	<result name="detail">/jsp/car/car_detail.jsp</result>
+     	<result name="update">/jsp/car/car_update.jsp</result>
+     	<result name="del" type="redirect">car_list.action</result>
+     	<result name="tolist" type="redirect">car_list.action</result>
+     	<result name="excel" type="stream">
+			<param name="contentType">application/vnd.ms-excel</param>
+			<param name="contentDisposition">attachment;filename="Cars.xls"</param>
+			<param name="inputName">excelFile</param>
+		</result>
+ 	 </action>
+ 	 
+ 	  <action name="fee_*" class="feeAction" method="{1}">
+ 	   	<result name="add" type="redirect">fee_list.action</result>
+ 	   <result name="del" type="redirect">fee_list.action</result>
+     	<result name="list">/jsp/fee/fee_list.jsp</result>
+     	<result name="detail">/jsp/fee/fee_detail.jsp</result>
+     	<result name="update">/jsp/fee/fee_update.jsp</result>
+ 	 </action>
+ 	 
+ 	  <action name="order_*" class="orderAction" method="{1}"> 
+ 	  <!--  <result type="json"></result> --> 
+ 	   <result name="add">/jsp/order/order_add.jsp</result>
+ 	   <result name="detail">/jsp/order/order_info.jsp</result>
+     	<result name="update">/jsp/order/order_update.jsp</result>
+     	<result name="checkList">/jsp/order/order_check_list.jsp</result>
+     	 <result name="check">/jsp/order/order_check.jsp</result>
+     	<result name="del" type="redirect">order_list.action</result>
+     	<result name="toList" type="redirect">order_list.action</result>
+     	<result name="dispatch">/jsp/order/order_dispatch_list.jsp</result>
+     	<result name="dispatchList"  type="redirect">order_dispatchList.action</result>
+     		<result name="overs">/jsp/order/order_overlist.jsp</result>
+     
+     	
+     	<result name="dispatchcar">/jsp/order/order_dispatchcar.jsp</result>
+     	<result name="beforeDispatch">/jsp/dispatch/dispatch_detail.jsp</result>
+ 	 </action>
+ 	 
+ 	  <action name="dispatch_*" class="dispatchAction" method="{1}">
+     	<result name="list">/jsp/dispatch/dispatch_list.jsp</result>
+     	<result name="detail">/jsp/dispatch/dispatch_detail.jsp</result>
+     	<result name="update">/jsp/dispatch/dispatch_update.jsp</result>
+ 	 </action>
+  </package>
+
+</struts>
